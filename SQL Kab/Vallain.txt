@@ -1,0 +1,18 @@
+CREATE TABLE Vallain(
+vallainID varchar(5)
+,Name varchar(15)
+,Gender varchar(7)
+,pName varchar(15),
+PRIMARY KEY (vallainID));
+
+INSERT INTO Vallain(vallainID,name,gender,pName)
+VALUES ('v01','Venom','Male','Somsak'),
+('v02','Bigtu','Male','Chaiyut'),
+('v03','Samhon','Female','Parena'),
+('v04','Bigdang','Male','Kingsoyer'),
+('v05','Kainui','Female','Prault'),
+('v06','Nomnom','Female','Yingluk'),
+('v07','Bigberm','Male','Yingza'),
+('v08','Kaija','Male','Suphan'),
+('v09','Nangfha','Female','Malee'),
+('v10','Pussa','Female','Papen');

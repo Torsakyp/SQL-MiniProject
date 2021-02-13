@@ -1,0 +1,23 @@
+CREATE TABLE Hero(
+HeroID int(5)
+,StationID varchar(5)
+,Name varchar(50)
+,Codename varchar(20)
+,Class varchar(2)
+,Gender varchar(7)
+,DOB Date 
+,PRIMARY KEY (HeroID,StationID)
+,FOREIGN KEY (StationID) REFERENCES HeroStation(StationID));
+
+INSERT INTO Hero(HeroID,StationID,Name,Codename,Class,GENDER,DOB)
+VALUES 
+(1,'A01','Kraken','Superman','S','Male',"1967-07-15")
+,(2,'A01','Somchai','Batman','B','Male',"1989-01-21")
+,(3,'A02','Adisak','TheFlash','B','Male',"1968-11-07")
+,(4,'C03','Somsi','Cat Women',NULL,'Female',"1979-01-02")
+,(5,'C08','Kadok','Thor','S','Male',"1975-12-30")
+,(6,'A01','Christina','Wonder Women','B','Female',"1976-02-20")
+,(7,'B02','Na','Hulk','A','Male',"1971-07-07")
+,(8,'B01','Todd','Ant man','C','Male',"1981-06-06")
+,(9,'B02','Padthai','Natacha','C','Female',"1999-05-12")
+,(10,'B01','Iam','Groot','A','Male',"1988-02-23");

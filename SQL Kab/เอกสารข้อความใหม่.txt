@@ -1,0 +1,19 @@
+select Codename from Hero , HeroStation
+where Herostation.StationID = Hero.StationID
+and Hero.StationID = 'C08' ;
+
+select Codename from Hero , HeroStation
+where Herostation.StationID = Hero.StationID
+and Herostation.StationID = 'C08' ;
+
+select Email from People , Vallain , HeroStation
+where HeroStation.StationID = People.StationID
+and Vallain.pName = People.Name
+and Vallain.Name = 'Bigtu' ;
+
+select * from HeroStation 
+where StationID = 'A02';
+
+SELECT *
+FROM Vallain
+WHERE VallainID BETWEEN 'V02' AND 'V05';

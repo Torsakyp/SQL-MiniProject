@@ -1,0 +1,20 @@
+CREATE TABLE HeroStation(
+StationID varchar(5)
+,Name varchar(10)
+,StationAddress varchar(100)
+,Email varchar(100)
+,PRIMARY KEY(StationID));
+
+INSERT INTO HeroStation(Name , Email , StationAddress , StationID) 
+VALUES
+('Ant','chris_01@hotmail.com','11 Kinkai Rd, Vietnam','A01'),
+('Bear','kadis_kk@hotmail.com','22222 Kinjai St, China','A02'),
+('Bat','gern_pp@hotmail.com','333 Padlom Rd, Kana','A03'),
+('Cock','lome_link@hotmail.com','4444 Sukumvit Rd, London','B01'),
+('Crab','buff01_lonh@hotmail.com','55 Tiger St, Thai','B02'),
+('Dog','gonenabe_11@hotmail.com','66 Cafe St, Kuwait','B03'),
+('Duck','torsak_spk@hotmail.com','77 Drake Rd, Syris','C01'),
+('Fox','cat1123_kiki@hotmail.com','88 Disto St, Nepal','C02'),
+('Koala','pater_kab@hotmail.com','99 Arcus Rd, Oman','C03'),
+('Ox','kora_mars@hotmail.com','0000 Mika Rd, Laos','C08');
+

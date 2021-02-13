@@ -1,0 +1,20 @@
+CREATE TABLE People(
+StationID varchar(5)
+,PeopleID int(5)
+,Name varchar(15) 
+,Gender varchar(7) 
+,Address varchar(100)
+,PRIMARY KEY(PeopleID , StationID)
+,FOREIGN KEY (StationID) REFERENCES HeroStation(StationID));
+
+INSERT INTO People(PeopleID,Name,Gender,Address,StationID) 
+values('001','Somsak','Male','1373 Rub Rd, London','B01')
+,('105','Chaiyut','Male','21 Eiei Rd,London','B01')
+,('237','Parena','Female','69 Fake Rd, Vietnam','A01')
+,('312','Kingsoyer','Male','77 Mamee St, Thai','B02')
+,('455','Prault','Male','9992 Kaidee Rd, Laos','C08')
+,('623','Yingluk','Female','76728 Saifai St, China','A02')
+,('757','Yingza','Female','10 Ramkam Rd, Thai','B02')
+,('808','Suphan','Male','87 Phukka Rd, Vietnam','A01')
+,('971','Malee','Male','72 Mamai St, Thai','B02')
+,('010','Papen','Female','67 Lamphong Rd, Vietnam','A01');

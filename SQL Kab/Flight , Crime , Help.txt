@@ -1,0 +1,22 @@
+CREATE TABLE Fight(
+Quantity int(2)
+,HeroID int(5)
+,VallainID varchar(5)
+,PRIMARY KEY(HeroID , VallainID)
+,FOREIGN KEY (HeroID) REFERENCES Hero(HeroID)
+,FOREIGN KEY (VallainID) REFERENCES Vallain(VallainID));
+
+CREATE TABLE Crime(
+Quantity int(2)
+,VallainID varchar(5)
+,PeopleID int(5)
+,PRIMARY KEY(VallainID , PeopleID)
+,FOREIGN KEY (VallainID) REFERENCES Vallain(VallainID)
+,FOREIGN KEY (PeopleID) REFERENCES People(PeopleID));
+
+CREATE TABLE Help(
+HeroID int(5)
+,PeopleID int(5)
+,PRIMARY KEY(HeroID , PeopleID)
+,FOREIGN KEY (HeroID) REFERENCES Hero(HeroID)
+,FOREIGN KEY (PeopleID) REFERENCES People(PeopleID));
